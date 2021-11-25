@@ -61,7 +61,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 40px;
 }
 
 .bg-center,
@@ -283,12 +283,7 @@ a:hover {
 .-no-gutters {
     margin-right: 0;
     margin-left: 0;
-}
-
-.row.row-no-gutters>[class^="col-"],
-.row.row-no-gutters>[class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
+    text-align: center;
 }
 
 #bloc-1-hero h1 {
@@ -725,6 +720,10 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 }
 
 h2 {
