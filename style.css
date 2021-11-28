@@ -26,10 +26,18 @@ a:hover {
     cursor: pointer;
 }
 
-#partenaires {
+#partenaires_container {
     text-align: center;
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    ;
+}
+
+.partenaires {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
 }
 
 #page-loading-blocs-notifaction {
@@ -67,7 +75,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 55px;
+    padding: 45px;
 }
 
 .bg-center,
@@ -772,6 +780,7 @@ h4 {
     color: #FFFFFF!important;
     position: relative;
     z-index: 2;
+    text-align: center;
 }
 
 .portfolio-thumb {
