@@ -7,18 +7,21 @@
 }
 
 body {
+    max-width: 100%;
     margin: 0;
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    text-decoration: none;
 }
 
 a:hover {
@@ -61,13 +64,8 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 100px 150px;
 }
 
 .bloc-md {
@@ -544,8 +542,16 @@ button {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form-control:focus:hover {
+    box-shadow: inset 0px 0px 3px 1px #0770cf;
 }
 
 .scrollToTop {
@@ -576,7 +582,7 @@ a[data-lightbox] {
 
 a[data-lightbox]:hover::before {
     content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-family: Helvetica, Arial;
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -692,10 +698,6 @@ a {
     color: #575757!important;
 }
 
-.container {
-    max-width: 1000px;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -716,6 +718,7 @@ a {
 
 p {
     font-size: 15px;
+    margin: 0;
 }
 
 .tight-width-whitespace {
@@ -731,10 +734,16 @@ p {
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
+    background-color: #5e4948;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.cta-hero:hover {
+    background-color: #483534;
 }
 
 .social {
@@ -793,6 +802,12 @@ h4 {
     margin-top: 50px;
 }
 
+#message {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    max-width: 100%;
+}
+
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -816,10 +831,11 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #483534;
+    background-color: #5e4948;
 }
 
-.tc-white {
+.tc-yellow {
+    text-align: center;
     color: #E6F134!important;
     position: relative;
     z-index: 3;
@@ -832,9 +848,12 @@ h4 {
     z-index: 3;
 }
 
+
+/**/
+
 .btn-atomic-tangerine:hover {
     background: #F4E44F!important;
-    color: #2F2F2F!important;
+    color: #483534!important;
 }
 
 .ltc-yellow {
@@ -1083,12 +1102,40 @@ h4 {
     margin-top: 30px;
 }
 
-form {
-    padding: 5px;
+.contact {
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
 }
 
-.close-lightbox {
-    display: inline-block;
+@media (max-width: 1400px) {
+    .contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .maps {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:1400px) {
+    .loca {
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:780px) {
+    .img {
+        width: 450px;
+        height: 300px;
+    }
+}
+
+.loca {
+    padding: 0 4rem;
 }
 
 .blocsapp-device-iphone5 {
@@ -1114,8 +1161,4 @@ form {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-
-.form-control:focus:hover {
-    box-shadow: inset 0px 0px 3px 1px #0770cf;
 }
