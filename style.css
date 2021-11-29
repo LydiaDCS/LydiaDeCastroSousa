@@ -542,9 +542,9 @@ button {
 }
 
 .form-control {
+    width: 100%;
     box-shadow: none;
     max-width: 100%;
-    width: 100%;
     padding: 5px 5px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -1064,7 +1064,9 @@ h4 {
 .bloc-xxl,
 .bloc-xl,
 .bloc-lg {
-    padding: 40px 0;
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 100%;
 }
 
 .bloc-sm,
@@ -1104,33 +1106,50 @@ h4 {
 
 .contact {
     padding: 1.5rem 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (max-width: 1400px) {
+@media (max-width:730px) {}
+
+form {
+    padding: 0 4rem;
+    width: 80%;
+}
+
+@media (max-width: 1350px) {
     .contact {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        flex-direction: column;
+        padding: 0;
     }
     .maps {
         margin-top: 40px;
     }
-}
-
-@media(max-width:1400px) {
-    .loca {
-        padding: 3rem;
+    .loca,
+    .form {
         display: flex;
         justify-content: center;
     }
 }
 
-@media (max-width:780px) {
+@media (max-width:700px) {
     .img {
         width: 450px;
         height: 300px;
+    }
+}
+
+@media (max-width:500px) {
+    .img {
+        width: 325px;
+        height: 280px;
+    }
+    form {
+        padding: 0 1.5rem;
+    }
+    .form-control {
+        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 }
 
