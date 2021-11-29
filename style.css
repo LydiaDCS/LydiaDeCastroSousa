@@ -1067,8 +1067,8 @@ h4 {
 @media (max-width:730px) {}
 
 form {
-    padding: 0 4rem;
-    width: 80%;
+    padding: 0 8rem;
+    width: 100%;
 }
 
 @media (max-width: 1350px) {
