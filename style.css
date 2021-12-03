@@ -218,6 +218,13 @@ a:hover {
     z-index: 2;
 }
 
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -228,7 +235,7 @@ a:hover {
     align-items: center;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'kingthings_petrockregular';
     padding: 0px!important;
     color: black!important;
@@ -682,9 +689,6 @@ h4 {
     z-index: 3;
 }
 
-
-/**/
-
 .btn-atomic-tangerine:hover {
     background: #F4E44F!important;
     color: #483534!important;
@@ -884,6 +888,8 @@ h4 {
 .navbar-brand {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-invert .navbar-toggle {
@@ -906,8 +912,8 @@ h4 {
 
 .bloc-sm,
 .bloc-md {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .bloc-tile-2 .container,
